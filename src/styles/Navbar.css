@@ -1,0 +1,122 @@
+/* Sidebar container */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 240px;
+  transition: width 0.3s ease;
+  background-color: #FCF9F3;
+  color: #FCF9F3;
+  overflow: hidden;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  background: #21D0CD;
+}
+
+/* Collapsed state */
+.sidebar.collapsed {
+  width: 60px;
+}
+
+/* Toggle button */
+.toggle-btn {
+  background: #21D0CD;
+  color: #FCF9F3;
+  border: none;
+  height: 50px;
+  width: 100%;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0px;
+}
+
+.toggle-btn:hover {
+  background-color: #A78BFA;
+  color: #FCF9F3;
+}
+
+/* List container */
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* List items */
+.nav-links li {
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  display: block;
+  background: #21D0CD;
+}
+
+/* Links */
+.nav-links li a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  padding-left: 16px;
+  font-size: 15px;
+  color: #FCF9F3;
+  text-decoration: none;
+  background: #21D0CD;
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  border-bottom: 0;
+}
+
+/* Hover effect */
+.nav-links li a:hover {
+  background-color: #A78BFA;
+  color: #FCF9F3;
+}
+
+/* Collapsed text behavior */
+.sidebar.collapsed .nav-links li a {
+  font-size: 0;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.sidebar.collapsed .nav-links li a::before {
+  content: attr(data-icon);
+  font-size: 18px;
+}
+
+.sidebar.collapsed .toggle-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #FCF9F3;
+}
+
+.nav-icon {
+  font-size: 1.25rem;
+  color: #FCF9F3;
+  margin-right: 8px;
+  margin-left: 20px;
+}
+
+.sidebar.collapsed .nav-links a {
+  justify-content: center;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  color: #1f2937;
+  text-decoration: none;
+  padding: 10px;
+}

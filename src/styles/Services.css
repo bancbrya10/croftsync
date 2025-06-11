@@ -1,0 +1,67 @@
+/* Services.css */
+.services-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #FCF9F3;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-top: 2rem;
+}
+
+li {
+    background-color: #1e293b;
+    margin: 10px;
+    padding: 5px;
+    height: 75px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-block {
+    margin-bottom: 2rem;
+    padding-left: 275px;
+    padding-right: 50px;
+}
+
+.service-block h3 {
+    margin: 0.5rem 0;
+    color: #FCF9F3;
+}
+
+.service-icon {
+    font-size: 2rem;
+    color: #21D0CD;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    color: #FCF9F3;
+    padding: 25px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease 1s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

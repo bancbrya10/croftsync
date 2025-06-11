@@ -1,0 +1,23 @@
+/* Hero.css */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: #0ea5e9;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  color: #FCF9F3;
+}
+
+button:hover {
+  background-color: #FCF9F3;
+  color: #1e293b;
+}

@@ -1,0 +1,25 @@
+/* Footer.css */
+footer {
+  background-color: #1e293b;
+  color: #FCF9F3;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+li {
+  font-size: 1.1rem;
+}
+
+a {
+  color: #FCF9F3;
+}
+
+a:hover {
+  color: #21D0CD;
+}
