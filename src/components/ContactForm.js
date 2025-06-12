@@ -10,10 +10,10 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_d5lz38y',     // Replace with your EmailJS service ID
-      'template_bpi7m5e',    // Replace with your EmailJS template ID
+      'service_v0a3s1r',     // Replace with your EmailJS service ID
+      'template_7bosos7',    // Replace with your EmailJS template ID
       form.current,
-      'NgwNi1RX_LTosAVYR'      // Replace with your EmailJS public key
+      'L45E5fuGFWIwh3dYP'      // Replace with your EmailJS public key
     ).then(() => {
       setStatus('Message sent successfully!');
       form.current.reset();
