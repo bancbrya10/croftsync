@@ -42,3 +42,9 @@
   display: flex;
   min-height: 100vh;
 }
+
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+}

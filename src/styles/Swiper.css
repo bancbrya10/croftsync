@@ -26,7 +26,6 @@
 .card .icon {
     font-size: 2.5rem;
     color: #00bfa6;
-    /* Seafoam green */
     margin-bottom: 1rem;
 }
 
@@ -76,12 +75,47 @@
 }
 
 .icon-wrapper {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #00bfa6;
-  margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #00bfa6;
+    margin-bottom: 1rem;
 }
 
 .card-text {
-  text-align: left;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .swiper-container {
+        width: 100% !important;
+        overflow: hidden;
+        margin-left: 25px;
+    }
+
+    .swiper-slide {
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 0 25px 0;
+        box-sizing: border-box;
+        min-height: 800px;
+    }
+
+    .services-carousel .swiper {
+        max-width: 500px;
+        margin-left: 25px;
+    }
+
+    .card p {
+        font-size: 11px;
+    }
+
+    .swiper-wrapper {
+        max-width: 300px;
+
+    }
 }

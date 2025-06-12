@@ -120,3 +120,14 @@
   text-decoration: none;
   padding: 10px;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
