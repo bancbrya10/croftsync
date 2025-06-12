@@ -37,7 +37,6 @@ body {
   background: #1e293b;
   color: #FCF9F3;
   text-align: center;
-  min-height: 100vh;
   width: 100%;
   padding-top: 50px;
 }
@@ -96,6 +95,11 @@ header {
   top: 0;
   background-color: #FCF9F3;
   z-index: 2;
+}
+
+iframe {
+  width: 700px;
+  height: 700px;
 }
 
 @media (max-width: 768px) {

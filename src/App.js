@@ -5,7 +5,9 @@ import Services from './components/Services';
 import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
-//import Footer from './components/Footer';
+import Footer from './components/Footer';
+import TermsOfService from './pages/TermsOfService'
+import PrivacyPolicy from './pages/PrivacyPolicy';
 import logo from './assets/logo-full.png'
 
 function App() {
@@ -27,8 +29,11 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
         </div>
+        <Footer />
       </div>
     </Router>
   );
