@@ -21,3 +21,14 @@ button:hover {
   background-color: #FCF9F3;
   color: #1e293b;
 }
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+}

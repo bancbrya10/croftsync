@@ -47,3 +47,15 @@
 .contact-h3 {
   padding: 40px;
 }
+
+@media (max-width: 768px) {
+  .contact-form {
+    width: 100%;
+    padding: 20px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+}

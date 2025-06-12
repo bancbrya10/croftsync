@@ -101,7 +101,7 @@ function Services() {
                                         <p style={{ whiteSpace: 'pre-line' }}>{item.text}</p>
                                     </div>
                                     {item.image && (
-                                        <div className="image-container">
+                                        <div className="img-container">
                                             <img src={item.image} alt={item.title} />
                                         </div>
                                     )}

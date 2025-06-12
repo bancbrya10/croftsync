@@ -3,3 +3,12 @@
     padding-left: 275px;
     padding-right: 50px;
 }
+
+@media (max-width: 768px) {
+  .about-section {
+    padding-left: 50px;
+  }
+  .about-text {
+    font-size: 16px;
+  }
+}
