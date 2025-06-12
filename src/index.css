@@ -112,4 +112,9 @@ iframe {
   img {
     max-width: 200px;
   }
+
+  iframe {
+    width: 350px;
+    height: 350px;
+  }
 }
