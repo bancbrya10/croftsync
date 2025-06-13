@@ -101,12 +101,11 @@
         max-width: 300px;
         margin: 0 0 25px 0;
         box-sizing: border-box;
-        min-height: 800px;
+        min-height: 700px;
     }
 
     .services-carousel .swiper {
         max-width: 500px;
-        margin-left: 25px;
     }
 
     .card p {
@@ -115,6 +114,6 @@
 
     .swiper-wrapper {
         max-width: 300px;
-
+        padding: 0px;
     }
 }

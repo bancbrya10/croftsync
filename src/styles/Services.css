@@ -68,7 +68,6 @@ p {
 @media (max-width: 768px) {
   .services-container {
     flex-direction: column;
-    padding: 20px;
   }
   .service-card {
     width: 100%;

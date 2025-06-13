@@ -9,21 +9,8 @@ p {
   margin-bottom: 2rem;
 }
 
-button {
-  background-color: #0ea5e9;
-  padding: 1rem 2.5rem;
-  font-size: 1.2rem;
-  border-radius: 8px;
-  color: #FCF9F3;
-}
-
-button:hover {
-  background-color: #FCF9F3;
-  color: #1e293b;
-}
-
 .hero-text {
-  padding: 25px;
+  padding: 15px;
 }
 
 @media (max-width: 768px) {
