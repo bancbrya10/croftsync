@@ -14,7 +14,6 @@ html {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  
 }
 
 /* Vertical navbar on the left */
@@ -130,5 +129,11 @@ iframe {
   .img-container {
     padding: 0px;
     padding-top: 25px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  img {
+    max-width: 250px;
   }
 }

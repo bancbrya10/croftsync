@@ -37,7 +37,7 @@ const AboutUs = () => {
           <img src={headshot} alt='Bancroft Headshot' />
         </div>
         <section>
-          <p>Founder: Bryan Bancroft</p>
+          <p className='caption'>Founder: Bryan Bancroft</p>
         </section>
       </div>
     </>

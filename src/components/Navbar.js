@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaHome, FaInfoCircle, FaEnvelope, FaServicestack } from 'react-icons/fa';
 import '../styles/Navbar.css';
+import { servicesArr } from './Services';
 
 const Navbar = () => {
   const [collapsed, setCollapsed] = useState(true);
@@ -42,11 +43,21 @@ const Navbar = () => {
             {!collapsed && <span>Home</span>}
           </Link>
         </li>
-        <li>
-          <Link to="/services">
-            <FaServicestack className="nav-icon" />
-            {!collapsed && <span>Services</span>}
+        <li className="services-dropdown">
+          <Link to="/services" className="services-link">
+            <FaServicestack className="nav-icon" /> Services <span className="dropdown-arrow">▾</span>
           </Link>
+          {!collapsed && (
+            <ul className="dropdown-menu">
+              {servicesArr.map(service => (
+                <li key={service.slug}>
+                  <Link to={`/services?target=${service.slug}`}>
+                    {service.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
         </li>
         <li>
           <Link to="/about">

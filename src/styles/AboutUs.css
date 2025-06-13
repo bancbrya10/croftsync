@@ -7,8 +7,17 @@
 @media (max-width: 768px) {
   .about-section {
     padding-left: 50px;
+    font-size: 10px;
   }
-  .about-text {
-    font-size: 16px;
+
+  .caption {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .about-section {
+    padding-left: 275px;
+    padding-right: 75px;
   }
 }
