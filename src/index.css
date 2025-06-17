@@ -105,33 +105,7 @@ iframe {
   height: 700px;
 }
 
-@media (max-width: 400px) {
-  body {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
-  img {
-    max-width: 200px;
-  }
-
-  iframe {
-    width: 350px;
-    height: 350px;
-  }
-
-  .main-content {
-    margin-left: 0;
-    padding-left: 0;
-  }
-
-  .img-container {
-    padding: 0px;
-    padding-top: 25px;
-  }
-}
-
-@media (max-width: 768px) and (min-width: 400px) {
+@media (max-width: 768px) {
   body {
     font-size: 14px;
     line-height: 1.5;
