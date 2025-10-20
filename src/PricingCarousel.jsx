@@ -57,7 +57,7 @@ export default function PricingCarousel() {
                 <li>Integration design & implementation</li>
                 <li>Testing, documentation & handover</li>
               </ul>
-              <a href="#contact" className="cs-btn cs-btn--accent">
+              <a href="#contact" className="cs-btn">
                 Start Your Pilot
               </a>
             </div>

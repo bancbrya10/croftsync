@@ -619,4 +619,24 @@ img,
   }
 }
 
+/* ===============================
+   Button Alignment Fix
+   =============================== */
 
+.cs-btn {
+  display: inline-flex; /* keeps text and icons aligned */
+  justify-content: center; /* centers text horizontally */
+  align-items: center; /* centers text vertically */
+  text-align: center; /* ensures multi-line text stays centered */
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.85rem 1.5rem;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cs-btn--accent:hover {
+  background: var(--cs-accent-hover, #0284c7);
+  transform: translateY(-2px);
+}
