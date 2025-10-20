@@ -640,3 +640,11 @@ img,
   background: var(--cs-accent-hover, #0284c7);
   transform: translateY(-2px);
 }
+
+.cs-disclaimer {
+    font-size: 0.5rem;
+}
+
+.cs-disclaimer-container {
+    text-align: center;
+}

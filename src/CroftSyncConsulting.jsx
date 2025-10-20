@@ -15,13 +15,11 @@ export default function CroftSyncConsulting() {
             className="cs-logo"
           />
           <h1 className="cs-hero__title">
-            Seamless Integration and Automation Consulting for Modern
-            Enterprises
+            Connect Your HR, Identity, and Business Systems — Automatically.
           </h1>
           <p className="cs-hero__subtitle">
-            Helping organizations connect HR, identity, and business systems
-            through secure, scalable integration frameworks that drive
-            efficiency, compliance, and growth.
+            Helping organizations eliminate manual onboarding, offboarding, and
+            data drift with secure, scalable integrations that just work.
           </p>
         </div>
       </header>
@@ -60,159 +58,105 @@ export default function CroftSyncConsulting() {
         </section>
 
         <section className="cs-section">
-          <h2 className="cs-h2">Services</h2>
+          <h2 className="cs-h2">
+            Specialized in HR, Identity, and Application Integrations
+          </h2>
           <ul className="cs-list">
             <li>
-              <strong>Custom API Integrations</strong> – Build secure,
-              maintainable connections between your customer relationship
-              management (CRM), enterprise resource planning (ERP), and human
-              resources information systems (HRIS). CroftSync unifies data
-              across departments, ensuring accuracy from finance to HR.
-              <br />
-              <br />
+              <strong>Integration Strategy & Design</strong> — Identify
+              opportunities to connect HR and IT systems for cleaner data, fewer
+              manual tasks, and stronger compliance.
             </li>
             <li>
-              <strong>Automation Workflows</strong> – Replace manual tasks with
-              AI-powered automations that synchronize data between business
-              systems. We streamline onboarding, payroll updates, and
-              offboarding processes by connecting your HR, identity, and
-              productivity platforms.
-              <br />
-              <br />
+              <strong>Automation Pilots</strong> — Two-week, fixed-scope
+              projects that deliver a working integration — not just diagrams.
             </li>
             <li>
-              <strong>Cloud Deployments</strong> – Deploy, scale, and monitor
-              integrations across cloud environments with built-in observability
-              and compliance. CroftSync ensures secure, auditable handling of
-              sensitive business and employee data.
-              <br />
-              <br />
+              <strong>Identity & Access Provisioning</strong> — Automate account
+              creation and removal across your stack using SSO and SCIM-based
+              flows.
             </li>
             <li>
-              <strong>SSO & Identity Integrations</strong> – Implement
-              enterprise-grade Single Sign-On using modern authentication
-              standards such as SAML, OAuth 2.0, and OpenID Connect. We create
-              unified, secure access experiences across your business
-              applications and HR systems.
-              <br />
-              <br />
-            </li>
-            <li>
-              <strong>User Provisioning & Lifecycle Management</strong> –
-              Automate employee onboarding, role changes, and deactivation
-              across systems. CroftSync designs workflows that maintain identity
-              and access alignment throughout the entire employment lifecycle.
-              <br />
-              <br />
-            </li>
-            <li>
-              <strong>HRIS Integration Consulting</strong> – Connect your HR
-              data with the rest of your operational ecosystem. We help
-              organizations sync employee information between HR platforms,
-              identity providers, and downstream tools to maintain a single,
-              accurate source of truth.
-              <br />
-              <br />
-            </li>
-            <li>
-              <strong>Consulting & Architecture</strong> – Tailored guidance on
-              integration design, data governance, and automation strategy.
-              CroftSync helps you modernize legacy systems and establish
-              scalable, maintainable integration frameworks.
-              <br />
-              <br />
-            </li>
-          </ul>
-
-          <img
-            src="../assets/diagram.png"
-            alt="Integration Diagram"
-            className="cs-section__image"
-          />
-        </section>
-
-    <PricingCarousel />
-
-        <section className="cs-section">
-          <h2 className="cs-h2">Specialized Integration Expertise</h2>
-          <ul className="cs-list">
-            <li>
-              <b>Human Resources and Identity Systems</b> – Seamlessly connect
-              HRIS, payroll, benefits, and identity platforms to automate
-              employee lifecycle management. CroftSync designs secure
-              integrations that synchronize employee data, roles, and
-              permissions across your organization while maintaining compliance
-              and auditability.
-              <br />
-              <br />
-            </li>
-            <li>
-              <b>Customer Relationship Management (CRM) Platforms</b> –
-              Integrate customer data, sales pipelines, and marketing automation
-              systems to ensure your teams operate from a single, accurate
-              source of truth. Our integrations enable real-time visibility and
-              eliminate data silos between departments.
-              <br />
-              <br />
-            </li>
-            <li>
-              <b>Enterprise Resource Planning (ERP) Solutions</b> – Streamline
-              financial, supply chain, and operations workflows by connecting
-              ERP systems with your other core business tools. CroftSync ensures
-              consistent, reliable data transfer to support analytics,
-              reporting, and forecasting.
-              <br />
-              <br />
-            </li>
-            <li>
-              <b>Identity and Access Management (IAM)</b> – Implement and
-              connect secure access controls across your enterprise. We
-              specialize in integrating identity providers, SSO protocols, and
-              provisioning tools to unify authentication and authorization
-              across all connected systems.
-              <br />
-              <br />
-            </li>
-            <li>
-              <b>Cloud and Automation Environments</b> – Build resilient,
-              event-driven workflows using modern cloud platforms and automation
-              frameworks. CroftSync helps you deploy scalable integrations with
-              monitoring, alerting, and performance insights built in.
-              <br />
-              <br />
-            </li>
-            <li>
-              <b>Data Integration and Analytics</b> – Unify data across your
-              organization for reporting and analytics. We connect structured
-              and unstructured data sources to enable actionable insights and
-              business intelligence, ensuring clean, accurate information flows
-              through every system.
-              <br />
-              <br />
+              <strong>Managed Integration Support</strong> — Ongoing monitoring,
+              documentation, and small improvements that keep everything in sync
+              as your systems evolve.
             </li>
           </ul>
         </section>
 
+        <PricingCarousel />
+
         <section className="cs-section">
-          <h2 className="cs-h2">Our Process</h2>
-          <ol className="cs-ol">
+          <h2 className="cs-h2">What We Integrate</h2>
+          <p className="cs-p">
+            <strong>Your data should flow like your organization.</strong> From
+            hiring to offboarding, CroftSync ensures your people data moves
+            seamlessly across every system — securely, accurately, and
+            automatically.
+          </p>
+          <div className="cs-figure">
+            {/* Replace with your generated diagram asset */}
+            <img
+              src={`${process.env.PUBLIC_URL}/assets/diagram.png`}
+              alt="CroftSync three-column integration flow: HR & People Systems → Identity & Access → Business Applications (and more!)"
+              className="cs-section__image"
+              loading="lazy"
+            />
+          </div>
+          <div className="cs-disclaimer-container">
+            <p className="cs-disclaimer">
+              All product names and brands are property of their respective
+              owners. CroftSync is an independent consulting firm and is not
+              affiliated with or endorsed by these companies.
+            </p>
+          </div>
+        </section>
+
+        {/* WHY CROFTSYNC */}
+        <section className="cs-section">
+          <h2 className="cs-h2">Why CroftSync</h2>
+
+          <p className="cs-p">
+            CroftSync was founded to bridge the gap between HR, IT, and
+            Operations teams. Most organizations rely on dozens of disconnected
+            systems — from HR platforms to identity providers and business
+            applications — that don’t talk to each other. We make them work
+            together.
+          </p>
+
+          <p className="cs-p">
+            Unlike large consultancies that deliver reports and roadmaps, we
+            focus on fast, functional outcomes. Our two-week automation pilots
+            turn ideas into live integrations, helping you eliminate manual
+            onboarding, strengthen compliance, and keep every system in sync.
+          </p>
+
+          <p className="cs-p">
+            Every engagement is built around three principles:
+          </p>
+
+          <ul className="cs-list">
             <li>
-              🧩 <strong>Discovery</strong> – We assess your tech stack and
-              identify integration opportunities.
+              <strong>Deep Integration Expertise —</strong> We specialize in
+              connecting HR, identity, and business systems through secure,
+              scalable automation.
             </li>
             <li>
-              ⚙️ <strong>Design</strong> – We map out system connections, APIs,
-              and data flows.
+              <strong>Fast, Fixed-Scope Delivery —</strong> Two-week pilots that
+              move from discovery to deployment without open-ended timelines or
+              surprise costs.
             </li>
             <li>
-              🚀 <strong>Build</strong> – We develop and test high-quality
-              integrations.
+              <strong>Security-First by Design —</strong> Every integration
+              follows best practices for SSO, SCIM, and least-privilege access
+              to keep your data protected.
             </li>
-            <li>
-              📈 <strong>Support</strong> – We monitor, maintain, and optimize
-              for long-term performance.
-            </li>
-          </ol>
+          </ul>
+
+          <p className="cs-p">
+            CroftSync exists to make your data flow the way your organization
+            does — smoothly, securely, and automatically.
+          </p>
         </section>
 
         <section className="cs-cta">
