@@ -494,3 +494,129 @@ img,
     border-radius: 16px; /* slightly smoother rounding */
   }
 }
+
+/* ===============================
+   CroftSync Pricing Section
+   =============================== */
+
+.cs-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cs-pricing-card {
+  background: var(--cs-card);
+  border: 1px solid var(--cs-border);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  text-align: left;
+  box-shadow: 0 6px 20px -8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cs-pricing__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--cs-ink);
+  margin-bottom: 0.5rem;
+}
+
+.cs-pricing__price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--cs-accent);
+  margin-bottom: 1rem;
+}
+
+.cs-pricing__desc {
+  color: var(--cs-text);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.cs-pricing__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.cs-pricing__list li::before {
+  content: "✓";
+  color: var(--cs-accent);
+  margin-right: 0.5rem;
+}
+
+/* ===============================
+   Unified Card Height Layout
+   =============================== */
+
+.cs-pricing-card {
+  background: var(--cs-card);
+  border: 1px solid var(--cs-border);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  text-align: left;
+  box-shadow: 0 6px 20px -8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  /* Flexbox ensures consistent vertical spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* Equal height enforcement inside Swiper */
+  height: 100%;
+  min-height: 560px; /* adjust as needed for content */
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .cs-pricing-grid {
+    gap: 1.5rem;
+  }
+  .cs-pricing-card {
+    padding: 1.75rem 1.25rem;
+    text-align: center;
+  }
+  .cs-pricing__title {
+    font-size: 1.1rem;
+  }
+}
+
+/* ===============================
+   Swiper Container Layout
+   =============================== */
+
+.cs-pricing {
+  width: 100%;
+  padding: 4rem 2rem;
+}
+
+.cs-pricing-swiper {
+  max-width: 1400px; /* ✅ allows 3 wide cards without scrolling */
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+}
+
+/* ===============================
+   Larger Card Width Tweaks
+   =============================== */
+
+@media (min-width: 1024px) {
+  .cs-pricing-card {
+    max-width: 500px; /* wider cards */
+    margin: 0 auto; /* keep centered */
+  }
+}
+
+@media (min-width: 1440px) {
+  .cs-pricing-card {
+    max-width: 600px; /* even wider on ultrawide screens */
+  }
+}
+
+

@@ -1,6 +1,7 @@
 // CroftSyncConsulting.jsx
 import React from "react";
 import ContactSection from "./ContactSection";
+import PricingCarousel from "./PricingCarousel";
 import "./index.css";
 
 export default function CroftSyncConsulting() {
@@ -18,8 +19,8 @@ export default function CroftSyncConsulting() {
             Enterprises
           </h1>
           <p className="cs-hero__subtitle">
-            Helping organizations connect HR, identity, and business
-            systems through secure, scalable integration frameworks that drive
+            Helping organizations connect HR, identity, and business systems
+            through secure, scalable integration frameworks that drive
             efficiency, compliance, and growth.
           </p>
         </div>
@@ -130,46 +131,7 @@ export default function CroftSyncConsulting() {
           />
         </section>
 
-        <section className="cs-section cs-offers">
-          <h2 className="cs-h2 text-center mb-10">Current Offers</h2>
-          <div className="cs-offer-grid">
-            {/* Offer 1 — Integration Audit */}
-            <div className="cs-offer">
-              <h3 className="cs-offer__title">Free Integration Audit</h3>
-              <p className="cs-offer__text">
-                Identify inefficiencies in your HR, identity, and business
-                systems with a complimentary 30-minute audit. Receive a concise
-                summary outlining automation opportunities and quick wins.
-              </p>
-              <ul className="cs-offer__list">
-                <li>30-minute consultation</li>
-                <li>Findings summary & next steps</li>
-                <li>No obligation or sales pitch</li>
-              </ul>
-              <a href="#contact" className="cs-btn">
-                Book Your Free Audit
-              </a>
-            </div>
-
-            {/* Offer 2 — Automation Pilot */}
-            <div className="cs-offer">
-              <h3 className="cs-offer__title">2-Week Automation Pilot</h3>
-              <p className="cs-offer__text">
-                Deliver a working integration in just two weeks. CroftSync
-                designs and implements automation that connects your HR,
-                identity, and business tools for measurable efficiency gains.
-              </p>
-              <ul className="cs-offer__list">
-                <li>Discovery & system mapping</li>
-                <li>Integration build & testing</li>
-                <li>Documentation & deployment</li>
-              </ul>
-              <a href="#contact" className="cs-btn">
-                Start Your Pilot
-              </a>
-            </div>
-          </div>
-        </section>
+    <PricingCarousel />
 
         <section className="cs-section">
           <h2 className="cs-h2">Specialized Integration Expertise</h2>
