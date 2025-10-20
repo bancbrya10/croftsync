@@ -11,20 +11,22 @@ export default function PricingCarousel() {
       <div className="cs-pricing-swiper-wrapper">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={32}
-          slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
           autoplay={{
-            delay: 5000, // time between scrolls (in ms)
-            disableOnInteraction: true, // pauses if user swipes/clicks
-            pauseOnMouseEnter: true, // optional: pause if hovered on desktop
+            delay: 5000,
+            disableOnInteraction: true,
+            pauseOnMouseEnter: true,
           }}
+          spaceBetween={32}
+          slidesPerView={1}
           breakpoints={{
             640: { slidesPerView: 1.1, spaceBetween: 20 },
             768: { slidesPerView: 1.6, spaceBetween: 24 },
-            1024: { slidesPerView: 2.3, spaceBetween: 28 },
-            1280: { slidesPerView: 3, spaceBetween: 32 },
+            1024: { slidesPerView: 2.1, spaceBetween: 32 }, // 👈 slightly wider cards
+            1280: { slidesPerView: 2.5, spaceBetween: 36 },
+            1440: { slidesPerView: 2.8, spaceBetween: 40 },
+            1600: { slidesPerView: 3, spaceBetween: 44 }, // 👈 fully wide cards on ultra-wide screens
           }}
           className="cs-pricing-swiper"
         >
