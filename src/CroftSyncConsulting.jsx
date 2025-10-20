@@ -145,8 +145,6 @@ export default function CroftSyncConsulting() {
                 <li>30-minute consultation</li>
                 <li>Findings summary & next steps</li>
                 <li>No obligation or sales pitch</li>
-                <li>Perfect for busy teams</li>
-                <li>Delivered within 5 business days</li>
               </ul>
               <a href="#contact" className="cs-btn">
                 Book Your Free Audit
@@ -166,7 +164,6 @@ export default function CroftSyncConsulting() {
                 <li>Integration build & testing</li>
                 <li>Documentation & deployment</li>
               </ul>
-              <p className="cs-offer__price">Fixed Price: $3,000–$8,000</p>
               <a href="#contact" className="cs-btn">
                 Start Your Pilot
               </a>
