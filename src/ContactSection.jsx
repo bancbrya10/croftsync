@@ -37,7 +37,8 @@ export default function ContactSection() {
       <h2 className="contact-h2">Contact</h2>
       <p className="contact-p">
         Tell us about your systems and goals — we’ll recommend practical steps
-        to reduce manual work and strengthen security.
+        to reduce manual HR processes, improve SSO security, and automate user
+        provisioning.
       </p>
 
       {!submitted ? (

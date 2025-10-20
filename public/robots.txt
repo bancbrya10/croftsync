@@ -1,3 +1,8 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.croftsync.com/sitemap.xml
+
+# Optional: rate-limit crawl if needed
+Crawl-delay: 10

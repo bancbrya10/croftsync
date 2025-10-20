@@ -18,8 +18,9 @@ export default function CroftSyncConsulting() {
             Connect Your HR, Identity, and Business Systems — Automatically.
           </h1>
           <p className="cs-hero__subtitle">
-            Helping organizations eliminate manual onboarding, offboarding, and
-            data drift with secure, scalable integrations that just work.
+            Helping organizations eliminate manual onboarding and
+            HRIS-to-identity integration bottlenecks with secure, scalable
+            integrations that just work.
           </p>
         </div>
       </header>
@@ -64,8 +65,8 @@ export default function CroftSyncConsulting() {
           <ul className="cs-list">
             <li>
               <strong>Integration Strategy & Design</strong> — Identify
-              opportunities to connect HR and IT systems for cleaner data, fewer
-              manual tasks, and stronger compliance.
+              opportunities to connect HR, IT, and identity systems securely for
+              cleaner data, fewer manual tasks, and stronger compliance.
             </li>
             <li>
               <strong>Automation Pilots</strong> — Two-week, fixed-scope
@@ -138,8 +139,8 @@ export default function CroftSyncConsulting() {
           <ul className="cs-list">
             <li>
               <strong>Deep Integration Expertise —</strong> We specialize in
-              connecting HR, identity, and business systems through secure,
-              scalable automation.
+              HRIS and identity integrations — including BambooHR, Workday, and
+              Okta through secure, scalable automation.
             </li>
             <li>
               <strong>Fast, Fixed-Scope Delivery —</strong> Two-week pilots that
