@@ -1,133 +1,127 @@
 /* croftsync.css */
 :root {
-    --cs-bg: #FDFAF3;
-    --cs-text: #0f172a;
-    /* slate-900 */
-    --cs-text-muted: #475569;
-    /* slate-600 */
-    --cs-ink: #0f172a;
-    --cs-hero: #0f172a;
-    --cs-hero-ink: #FDFAF3;
-    --cs-accent: #38bdf8;
-    /* sky-400 */
-    --cs-accent-ink: #0f172a;
-    --cs-card: #FDFAF3;
-    --cs-border: #e2e8f0;
-    /* slate-200 */
+  --cs-bg: #fdfaf3;
+  --cs-text: #0f172a;
+  /* slate-900 */
+  --cs-text-muted: #475569;
+  /* slate-600 */
+  --cs-ink: #0f172a;
+  --cs-hero: #0f172a;
+  --cs-hero-ink: #fdfaf3;
+  --cs-accent: #38bdf8;
+  /* sky-400 */
+  --cs-accent-ink: #0f172a;
+  --cs-card: #fdfaf3;
+  --cs-border: #e2e8f0;
+  /* slate-200 */
 }
 
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body,
 #root {
-    height: 100%;
+  height: 100%;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   width: 100%;
 }
 
 body {
-    margin: 0;
-    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-    background: var(--cs-bg);
-    color: var(--cs-text);
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--cs-bg);
+  color: var(--cs-text);
 }
-
 
 /* Layout */
 .cs-main {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 4rem 1.25rem;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4rem 1.25rem;
 }
-
 
 /* Hero */
 .cs-hero {
-    background: var(--cs-hero);
-    color: var(--cs-hero-ink);
-    text-align: center;
-    padding: 5rem 0;
-    ;
+  background: var(--cs-hero);
+  color: var(--cs-hero-ink);
+  text-align: center;
+  padding: 5rem 0;
 }
 
 .cs-hero__title {
-    font-size: 3ch;
-    line-height: 1.1;
-    margin: 0 0 .75rem;
-    font-weight: 800;
-    color: #FDFAF3;
+  font-size: 3ch;
+  line-height: 1.1;
+  margin: 0 0 0.75rem;
+  font-weight: 800;
+  color: #fdfaf3;
 }
 
 .cs-hero__subtitle {
-    margin: 0;
-    opacity: .85;
-    font-size: 1.5ch;
-    color: #FDFAF3;
+  margin: 0;
+  opacity: 0.85;
+  font-size: 1.5ch;
+  color: #fdfaf3;
 }
-
 
 /* Sections */
 .cs-section {
-    margin-bottom: 3.5rem;
+  margin-bottom: 3.5rem;
 }
 
 .cs-h2 {
-    font-size: 1.5rem;
-    margin: 0 0 1rem;
-    color: var(--cs-ink);
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+  color: var(--cs-ink);
 }
 
 .cs-p {
-    margin: 0;
-    line-height: 1.75;
-    color: #1f2937;
+  margin: 0;
+  line-height: 1.75;
+  color: #1f2937;
 }
-
 
 /* Lists */
 .cs-list {
-    margin: 0;
-    padding-left: 1.25rem;
-    line-height: 1.9;
-    color: #1f2937;
+  margin: 0;
+  padding-left: 1.25rem;
+  line-height: 1.9;
+  color: #1f2937;
 }
 
 .cs-ol {
-    margin: 0;
-    padding-left: 1.25rem;
-    line-height: 1.9;
-    color: #1f2937;
+  margin: 0;
+  padding-left: 1.25rem;
+  line-height: 1.9;
+  color: #1f2937;
 }
-
 
 /* CTA */
 .cs-cta {
-    background: var(--cs-hero);
-    color: var(--cs-hero-ink);
-    text-align: center;
-    padding: 4rem 1.5rem;
-    border-radius: 16px;
-    margin: 2rem auto 3rem;
-    max-width: 960px;
+  background: var(--cs-hero);
+  color: var(--cs-hero-ink);
+  text-align: center;
+  padding: 4rem 1.5rem;
+  border-radius: 16px;
+  margin: 2rem auto 3rem;
+  max-width: 960px;
 }
 
 .cs-cta__title {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    margin: 0 0 .5rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin: 0 0 0.5rem;
 }
 
 .cs-cta__subtitle {
-    margin: 0 auto 1rem;
-    max-width: 56ch;
-    color: #cbd5e1;
+  margin: 0 auto 1rem;
+  max-width: 56ch;
+  color: #cbd5e1;
 }
 
 /* ===============================
@@ -135,131 +129,250 @@ body {
    =============================== */
 
 .cs-thankyou {
-    text-align: center;
-    background: var(--cs-card);
-    border: 1px solid var(--cs-border);
-    border-radius: 12px;
-    padding: 2rem;
-    margin-top: 2rem;
-    box-shadow: 0 6px 20px -8px rgba(0, 0, 0, 0.1);
-    animation: fadeInThank 0.5s ease forwards;
+  text-align: center;
+  background: var(--cs-card);
+  border: 1px solid var(--cs-border);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 6px 20px -8px rgba(0, 0, 0, 0.1);
+  animation: fadeInThank 0.5s ease forwards;
 }
 
 .cs-thankyou__title {
-    color: var(--cs-ink);
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
+  color: var(--cs-ink);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 .cs-thankyou__text {
-    color: var(--cs-text-muted);
-    font-size: 1.05rem;
-    margin: 0;
+  color: var(--cs-text-muted);
+  font-size: 1.05rem;
+  margin: 0;
 }
 
 @keyframes fadeInThank {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
 
 /* Button */
 .cs-btn {
-    display: inline-block;
-    background: var(--cs-accent);
-    color: var(--cs-accent-ink);
-    text-decoration: none;
-    font-weight: 700;
-    padding: .8rem 1.25rem;
-    border-radius: 12px;
-    border: 2px solid transparent;
-    transition: transform .08s ease, box-shadow .2s ease, background-color .2s ease;
+  display: inline-block;
+  background: var(--cs-accent);
+  color: var(--cs-accent-ink);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.8rem 1.25rem;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  transition: transform 0.08s ease, box-shadow 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .cs-btn:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .35);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.35);
 }
 
 .cs-btn:active {
-    transform: translateY(0);
+  transform: translateY(0);
 }
-
 
 /* Links */
 .cs-link {
-    color: #0284c7;
-    text-decoration: none;
-    border-bottom: 1px dashed rgba(2, 132, 199, .35);
+  color: #0284c7;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(2, 132, 199, 0.35);
 }
 
 .cs-link:hover {
-    border-bottom-color: rgba(2, 132, 199, .75);
+  border-bottom-color: rgba(2, 132, 199, 0.75);
 }
-
 
 /* Footer */
 .cs-footer {
-    background: #e2e8f0;
-    color: var(--cs-text-muted);
-    text-align: center;
-    padding: 1rem;
-    margin-top: auto;
-    font-size: .9rem;
+  background: #e2e8f0;
+  color: var(--cs-text-muted);
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  font-size: 0.9rem;
 }
-
 
 /* Card utility (if you need it later) */
 .cs-card {
-    background: var(--cs-card);
-    border: 1px solid var(--cs-border);
-    border-radius: 16px;
-    padding: 1.25rem;
+  background: var(--cs-card);
+  border: 1px solid var(--cs-border);
+  border-radius: 16px;
+  padding: 1.25rem;
 }
 
 .cs-list {
-    list-style: none;
-    /* remove default bullets */
-    padding-left: 0;
-    /* align flush with section content */
-    margin: 0;
+  list-style: none;
+  /* remove default bullets */
+  padding-left: 0;
+  /* align flush with section content */
+  margin: 0;
+}
+
+.cs-logo {
+  margin-bottom: 10px;
 }
 
 .cs-hero__logo {
-    border: #16D1CE 4px solid;
-    border-radius: 16px;
+  border: #16d1ce 4px solid;
+  border-radius: 16px;
 }
 
 .cs-section:first-of-type .cs-p:first-of-type {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--cs-ink);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--cs-ink);
 }
 
 .cs-section__image {
-    display: block;
-    max-width: 500px;
-    height: auto;
-    margin: 2rem auto 0;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+  height: auto;
+  margin: 2rem auto 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* ===============================
+   CroftSync Offers Section
+   =============================== */
+
+.cs-offers {
+  text-align: center;
+}
+
+.cs-offer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cs-offer {
+  background: var(--cs-card);
+  border: 1px solid var(--cs-border);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: left;
+  box-shadow: 0 6px 20px -8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cs-offer:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px -6px rgba(0, 0, 0, 0.12);
+}
+
+.cs-offer__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--cs-ink);
+  margin-bottom: 0.75rem;
+}
+
+.cs-offer__text {
+  color: var(--cs-text);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.cs-offer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.cs-offer__list li::before {
+  content: "✓";
+  color: var(--cs-accent);
+  margin-right: 0.5rem;
+}
+
+.cs-offer__price {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--cs-ink);
+}
+
+.cs-offer .cs-btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ===============================
+   Mobile Hero Adjustments
+   =============================== */
+@media (max-width: 768px) {
+  .cs-hero__subtitle {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 90%;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+/* ===============================
+   Responsive Image Handling
+   =============================== */
+img,
+.cs-section-img {
+  display: block;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Slight reduction for very small screens */
+@media (max-width: 480px) {
+  img,
+  .cs-section-img {
+    max-width: 85%;
+  }
+}
+
+/* Slight reduction for very small screens */
+@media (max-width: 768px) {
+  img,
+  .cs-section-img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cs-offer-grid {
+    gap: 1.5rem;
+  }
+  .cs-offer {
+    padding: 1.5rem;
+  }
+  .cs-offer__title {
+    font-size: 1.1rem;
+  }
+}
 
 /* Responsive tweaks */
 @media (min-width: 1024px) {
-    .cs-main {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
+  .cs-main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 /* ===============================
@@ -268,78 +381,116 @@ body {
 
 /* Global typography adjustments */
 @media (max-width: 768px) {
-    body {
-        font-size: 16px;
-        line-height: 1.6;
-        padding: 0;
-    }
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0;
+  }
 
-    .cs-main {
-        padding: 2rem 1rem;
-    }
+  .cs-main {
+    padding: 2rem 1rem;
+  }
 
-    .cs-hero {
-        padding: 3rem 1rem;
-    }
+  .cs-hero {
+    padding: 3rem 1rem;
+  }
 
-    .cs-hero__title {
-        font-size: 1.8rem;
-        line-height: 1.25;
-    }
+  .cs-hero__title {
+    font-size: 1.8rem;
+    line-height: 1.25;
+  }
 
-    .cs-hero__subtitle {
-        font-size: 1rem;
-        max-width: 90%;
-    }
+  .cs-hero__subtitle {
+    font-size: 1rem;
+    max-width: 90%;
+  }
 
-    .cs-section {
-        margin-bottom: 2.5rem;
-    }
+  .cs-section {
+    margin-bottom: 2.5rem;
+  }
 
-    .cs-h2 {
-        font-size: 1.25rem;
-        text-align: center;
-    }
+  .cs-h2 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
 
-    .cs-p,
-    .cs-list,
-    .cs-ol {
-        font-size: 0.95rem;
-        line-height: 1.7;
-    }
+  .cs-p,
+  .cs-list,
+  .cs-ol {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
 
-    .cs-btn {
-        width: 100%;
-        text-align: center;
-        font-size: 1rem;
-        padding: 1rem;
-        min-height: 48px;
-        padding: 0.75rem 1.25rem;
-    }
+  .cs-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+    min-height: 48px;
+    padding: 0.75rem 1.25rem;
+  }
 
-    .cs-cta {
-        margin: 1.5rem 0 2rem;
-        border-radius: 12px;
-        padding: 3rem 1rem;
-    }
+  .cs-cta {
+    margin: 1.5rem 0 2rem;
+    border-radius: 12px;
+    padding: 3rem 1rem;
+  }
 
-    .cs-footer {
-        font-size: 0.85rem;
-        padding: 1rem;
-    }
+  .cs-footer {
+    font-size: 0.85rem;
+    padding: 1rem;
+  }
 }
 
 /* Extra-small screens (phones under ~400px) */
 @media (max-width: 400px) {
-    .cs-hero__title {
-        font-size: 1.5rem;
-    }
+  .cs-hero__title {
+    font-size: 1.5rem;
+  }
 
-    .cs-hero__subtitle {
-        font-size: 0.9rem;
-    }
+  .cs-hero__subtitle {
+    font-size: 0.9rem;
+  }
 
-    .cs-btn {
-        font-size: 0.9rem;
-    }
+  .cs-btn {
+    font-size: 0.9rem;
+  }
+}
+
+/* ===============================
+   Hero Content Constraint
+   =============================== */
+
+.cs-hero__content {
+  max-width: 1200px; /* keeps text centered on large screens */
+  margin: 0 auto; /* centers the text container */
+  text-align: center; /* ensures headline and subtext are centered */
+}
+
+/* Responsive adjustment */
+@media (max-width: 1024px) {
+  .cs-hero__content {
+    max-width: 90%;
+  }
+}
+
+/* ===============================
+   Logo Refinements
+   =============================== */
+
+.cs-logo {
+  display: block;
+  margin: 0 auto 1.5rem;
+  border-radius: 12px; /* rounded corners */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  max-width: 750px; /* default size */
+  height: auto;
+}
+
+/* Larger and more pronounced on big screens */
+@media (min-width: 1024px) {
+  .cs-logo {
+    max-width: 750px; /* make it about 20% larger */
+    border-radius: 16px; /* slightly smoother rounding */
+  }
 }
