@@ -2,19 +2,24 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 export default function PricingCarousel() {
   return (
     <section className="cs-section cs-pricing">
-      <h2 className="cs-h2 text-center mb-10">Package Tiers</h2>
+      <h2 className="cs-h2 text-center mb-10">Packages</h2>
       <div className="cs-pricing-swiper-wrapper">
         <Swiper
-          modules={[Navigation, Pagination]}
-          navigation
-          pagination={{ clickable: true }}
+          modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={32}
           slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          autoplay={{
+            delay: 5000, // time between scrolls (in ms)
+            disableOnInteraction: true, // pauses if user swipes/clicks
+            pauseOnMouseEnter: true, // optional: pause if hovered on desktop
+          }}
           breakpoints={{
             640: { slidesPerView: 1.1, spaceBetween: 20 },
             768: { slidesPerView: 1.6, spaceBetween: 24 },
