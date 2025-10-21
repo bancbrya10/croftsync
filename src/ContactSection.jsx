@@ -10,6 +10,25 @@ export default function ContactSection() {
     }
   }, [submitted]);
 
+  const [selectedPackage, setSelectedPackage] = useState("");
+  useEffect(() => {
+  const updateSelectedPackage = () => {
+    const paramsString = window.location.hash.split("?")[1] || "";
+    const params = new URLSearchParams(paramsString);
+    const pkg = params.get("package");
+    if (pkg) {
+      setSelectedPackage(pkg);
+    }
+  };
+
+  // Run once on mount
+  updateSelectedPackage();
+
+  // Run again whenever the hash changes
+  window.addEventListener("hashchange", updateSelectedPackage);
+  return () => window.removeEventListener("hashchange", updateSelectedPackage);
+}, []);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const form = e.target;
@@ -24,6 +43,7 @@ export default function ContactSection() {
       if (response.ok) {
         form.reset();
         setSubmitted(true);
+        setSelectedPackage("");
       } else {
         alert("Something went wrong. Please try again.");
       }
@@ -56,7 +76,14 @@ export default function ContactSection() {
           <label htmlFor="package" className="cs-label">
             Select Your Package
           </label>
-          <select id="package" name="package" required className="cs-select">
+          <select
+            id="package"
+            name="package"
+            required
+            value={selectedPackage}
+            onChange={(e) => setSelectedPackage(e.target.value)}
+            className="cs-select"
+          >
             <option value="">-- Choose an Option --</option>
             <option value="integration-audit">
               Integration Audit

@@ -44,9 +44,17 @@ export default function PricingCarousel() {
                 <li>Prioritized recommendations</li>
                 <li>No-obligation roadmap</li>
               </ul>
-              <a href="#contact" className="cs-btn">
-                Book a Free Audit
-              </a>
+              <button
+                onClick={() => {
+                  window.location.hash = `contact?package=integration-audit`;
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="cs-btn"
+              >
+                Book an Audit
+              </button>
             </div>
           </SwiperSlide>
 
@@ -64,9 +72,20 @@ export default function PricingCarousel() {
                 <li>Integration design & implementation</li>
                 <li>Testing, documentation & handover</li>
               </ul>
-              <a href="#contact" className="cs-btn">
+              <button
+                onClick={() => {
+                  // Update the URL hash so the contact form preselects the package
+                  window.location.hash = `contact?package=automation-pilot`;
+
+                  // Smooth scroll into view
+                  const contactEl = document.getElementById("contact");
+                  if (contactEl)
+                    contactEl.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="cs-btn cs-btn--accent"
+              >
                 Start Your Pilot
-              </a>
+              </button>
             </div>
           </SwiperSlide>
 
@@ -83,9 +102,18 @@ export default function PricingCarousel() {
                 <li>Feature updates & improvements</li>
                 <li>Dedicated contact & SLA options</li>
               </ul>
-              <a href="#contact" className="cs-btn">
+
+              <button
+                onClick={() => {
+                  window.location.hash = `contact?package=managed-support`;
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="cs-btn"
+              >
                 Discuss Options
-              </a>
+              </button>
             </div>
           </SwiperSlide>
         </Swiper>
