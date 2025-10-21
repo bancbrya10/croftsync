@@ -1,5 +1,5 @@
 // CroftSyncConsulting.jsx
-import React from "react";
+import Footer from "./Footer";
 import ContactSection from "./ContactSection";
 import PricingCarousel from "./PricingCarousel";
 import "./index.css";
@@ -165,9 +165,7 @@ export default function CroftSyncConsulting() {
         </section>
       </main>
 
-      <footer className="cs-footer">
-        © 2025 CroftSync Consulting. All rights reserved.
-      </footer>
+      <Footer />
     </div>
   );
 }
