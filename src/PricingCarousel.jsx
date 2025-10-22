@@ -7,7 +7,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 export default function PricingCarousel() {
   return (
     <section className="cs-section cs-pricing">
-      <h2 className="cs-h2 text-center mb-10">Packages</h2>
+      <h2 className="cs-h2 text-center mb-10">What We Offer</h2>
       <div className="cs-pricing-swiper-wrapper">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
