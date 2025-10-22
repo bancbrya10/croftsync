@@ -58,34 +58,118 @@ export default function CroftSyncConsulting() {
           </p>
         </section>
 
-        <section className="cs-section">
-          <h2 className="cs-h2">
-            Specialized in HR, Identity, and Application Integrations
-          </h2>
-          <ul className="cs-list">
+        {/* WHY CROFTSYNC */}
+        <section class="cs-section">
+          <h2 class="cs-h2">Why CroftSync</h2>
+          <div class="cs-before-after-grid">
+            <div class="cs-before">
+              <h3 class="cs-subheading">
+                <span class="cs-icon">⚠️</span> Before CroftSync
+              </h3>
+              <ul class="cs-list">
+                <li>
+                  <strong>Disconnected systems</strong> — HR, IT, and operations
+                  platforms don’t communicate, creating data silos.
+                </li>
+                <li>
+                  <strong>Manual provisioning</strong> — User access and account
+                  setup depend on spreadsheets or ticket queues.
+                </li>
+                <li>
+                  <strong>Inconsistent updates</strong> — HR changes aren’t
+                  reflected in downstream apps, leading to compliance risks.
+                </li>
+                <li>
+                  <strong>Limited visibility</strong> — Teams can’t track
+                  workflow status or access changes in one place.
+                </li>
+              </ul>
+            </div>
+
+            <div class="cs-after">
+              <h3 class="cs-subheading">
+                <span class="cs-icon">✅</span> After CroftSync
+              </h3>
+              <ul class="cs-list">
+                <li>
+                  <strong>Connected ecosystem</strong> — HR, identity, and
+                  business systems stay perfectly in sync.
+                </li>
+                <li>
+                  <strong>Automated lifecycle management</strong> — Onboarding
+                  and offboarding trigger across every platform instantly.
+                </li>
+                <li>
+                  <strong>Process-level intelligence</strong> — Conditional
+                  rules and business logic ensure secure, context-aware access.
+                </li>
+                <li>
+                  <strong>Visibility and control</strong> — Centralized
+                  monitoring and audit-ready logging for every integration.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <br/>
+
+          <p class="cs-p">
+            Most HR, IT, and business platforms already come with “native”
+            integrations — but those built-in connectors only go so far. They
+            can sync basic data between systems, yet every organization’s
+            reality is more complex: unique workflows, conditional access rules,
+            and tools that don’t talk to each other out of the box.
+          </p>
+          <br />
+
+          <p class="cs-p">
+            That’s where CroftSync comes in. We design secure, custom
+            integration logic that extends beyond what default HRIS or identity
+            provider connections can handle. From onboarding workflows and
+            conditional provisioning to automating approvals and multi-system
+            orchestration, CroftSync connects your technology to the way your
+            business actually operates.
+          </p>
+          <br />
+
+          <p class="cs-p">
+            <strong>
+              Native integrations move data — CroftSync moves processes.
+            </strong>
+            <br />
+            <br />
+            Our consulting and automation services close the gap between HR, IT,
+            and operations, delivering solutions that reduce manual effort,
+            improve compliance, and scale with your organization’s growth.
+          </p>
+          <br />
+
+          <ul class="cs-list">
             <li>
-              <strong>Integration Strategy & Design</strong> — Identify
-              opportunities to connect HR, IT, and identity systems securely for
-              cleaner data, fewer manual tasks, and stronger compliance.
+              <strong>Custom Integration Logic —</strong> Implement rules,
+              filters, and sequencing that pre-built connectors can’t support.
             </li>
             <li>
-              <strong>Automation Pilots</strong> — Two-week, fixed-scope
-              projects that deliver a working integration — not just diagrams.
+              <strong>Cross-System Automation —</strong> Extend provisioning
+              events to CRMs, project tools, communication platforms, and more.
             </li>
             <li>
-              <strong>Identity & Access Provisioning</strong> — Automate account
-              creation and removal across your stack using SSO and SCIM-based
-              flows.
+              <strong>Scalable Architecture —</strong> Build workflows that
+              evolve with your systems, not around their limitations.
             </li>
             <li>
-              <strong>Managed Integration Support</strong> — Ongoing monitoring,
-              documentation, and small improvements that keep everything in sync
-              as your systems evolve.
+              <strong>Security & Compliance —</strong> Maintain least-privilege
+              access, auditability, and seamless deactivation across every
+              system.
             </li>
           </ul>
-        </section>
+          <br />
 
-        <PricingCarousel />
+          <p class="cs-p">
+            CroftSync turns disconnected tools into an integrated ecosystem —
+            one where new hires are productive on day one, departures are
+            handled securely, and every system stays in sync automatically.
+          </p>
+        </section>
 
         <section className="cs-section">
           <h2 className="cs-h2">What We Integrate</h2>
@@ -113,68 +197,7 @@ export default function CroftSyncConsulting() {
           </div>
         </section>
 
-        {/* WHY CROFTSYNC */}
-        <section class="cs-section">
-          <h2 class="cs-h2">Why CroftSync</h2>
-
-          <p class="cs-p">
-            Most HR, IT, and business platforms already come with “native”
-            integrations — but those built-in connectors only go so far. They
-            can sync basic data between systems, yet every organization’s
-            reality is more complex: unique workflows, conditional access rules,
-            and tools that don’t talk to each other out of the box.
-          </p>
-          <br/>
-
-          <p class="cs-p">
-            That’s where CroftSync comes in. We design secure, custom
-            integration logic that extends beyond what default HRIS or identity
-            provider connections can handle. From onboarding workflows and
-            conditional provisioning to automating approvals and multi-system
-            orchestration, CroftSync connects your technology to the way your
-            business actually operates.
-          </p>
-          <br/>
-
-          <p class="cs-p">
-            <strong>
-              Native integrations move data — CroftSync moves processes.
-            </strong>
-            <br/>
-            <br/>
-            Our consulting and automation services close the gap between HR, IT,
-            and operations, delivering solutions that reduce manual effort,
-            improve compliance, and scale with your organization’s growth.
-          </p>
-          <br/>
-
-          <ul class="cs-list">
-            <li>
-              <strong>Custom Integration Logic —</strong> Implement rules,
-              filters, and sequencing that pre-built connectors can’t support.
-            </li>
-            <li>
-              <strong>Cross-System Automation —</strong> Extend provisioning
-              events to CRMs, project tools, communication platforms, and more.
-            </li>
-            <li>
-              <strong>Scalable Architecture —</strong> Build workflows that
-              evolve with your systems, not around their limitations.
-            </li>
-            <li>
-              <strong>Security & Compliance —</strong> Maintain least-privilege
-              access, auditability, and seamless deactivation across every
-              system.
-            </li>
-          </ul>
-          <br/>
-
-          <p class="cs-p">
-            CroftSync turns disconnected tools into an integrated ecosystem —
-            one where new hires are productive on day one, departures are
-            handled securely, and every system stays in sync automatically.
-          </p>
-        </section>
+        <PricingCarousel />
 
         <section className="cs-cta">
           <ContactSection />

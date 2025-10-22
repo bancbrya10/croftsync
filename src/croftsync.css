@@ -711,3 +711,73 @@ img,
   max-width: 5000px;
   margin: 0 auto;
 }
+
+/* =============================
+   BEFORE / AFTER CROFTSYNC
+   ============================= */
+
+.cs-before-after-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3rem;
+  margin-top: 2rem;
+  align-items: start;
+}
+
+.cs-before,
+.cs-after {
+  background: var(--cs-card);
+  border: 1px solid var(--cs-border);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 6px 18px -8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  min-height: 475px;
+}
+
+.cs-before:hover,
+.cs-after:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.12);
+}
+
+.cs-subheading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--cs-ink);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cs-icon {
+  font-size: 1.4rem;
+}
+
+.cs-before {
+  background: #fff7f7;
+  border-color: #fca5a5;
+}
+
+.cs-after {
+  background: #f0fdfa;
+  border-color: #6ee7b7;
+}
+
+.cs-before ul li,
+.cs-after ul li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .cs-before-after-grid {
+    gap: 1.5rem;
+  }
+
+  .cs-before,
+  .cs-after {
+    padding: 1.5rem;
+  }
+}
