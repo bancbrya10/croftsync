@@ -18,10 +18,10 @@ export default function PricingCarousel() {
             disableOnInteraction: true,
             pauseOnMouseEnter: true,
           }}
-          spaceBetween={200}
+          spaceBetween={40}
           slidesPerView={1}
           breakpoints={{
-            640: { slidesPerView: 1.2 }, // small tablets
+            640: { slidesPerView: 1 }, // small tablets
             768: { slidesPerView: 1 }, // medium screens
             1024: { slidesPerView: 1 }, // laptops
             1280: { slidesPerView: 1 }, // large desktops
