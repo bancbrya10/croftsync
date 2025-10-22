@@ -18,17 +18,18 @@ export default function PricingCarousel() {
             disableOnInteraction: true,
             pauseOnMouseEnter: true,
           }}
-          spaceBetween={32}
+          spaceBetween={200}
           slidesPerView={1}
           breakpoints={{
-            640: { slidesPerView: 1.1, spaceBetween: 20 },
-            768: { slidesPerView: 1.6, spaceBetween: 24 },
-            1024: { slidesPerView: 2.1, spaceBetween: 32 }, // 👈 slightly wider cards
-            1280: { slidesPerView: 2.5, spaceBetween: 36 },
-            1440: { slidesPerView: 2.8, spaceBetween: 40 },
-            1600: { slidesPerView: 3, spaceBetween: 44 }, // 👈 fully wide cards on ultra-wide screens
+            640: { slidesPerView: 1.2 }, // small tablets
+            768: { slidesPerView: 1 }, // medium screens
+            1024: { slidesPerView: 1 }, // laptops
+            1280: { slidesPerView: 1 }, // large desktops
           }}
-          className="cs-pricing-swiper"
+          centeredSlides={true}
+          grabCursor={true}
+          loop={false}
+          className="cs-swiper"
         >
           {/* Integration Audit */}
           <SwiperSlide>
@@ -38,6 +39,11 @@ export default function PricingCarousel() {
                 Evaluate your HR, identity, and business systems to uncover
                 automation opportunities. Includes a 30-minute consultation and
                 summary of findings.
+              </p>
+              <p className="cs-pricing__desc">
+                Includes one 30-minute follow-up session for clarification or
+                next-step recommendations. No ongoing support or implementation
+                changes included.
               </p>
               <ul className="cs-pricing__list">
                 <li>System & process review</li>
@@ -66,6 +72,12 @@ export default function PricingCarousel() {
                 A fixed-scope engagement delivering a working integration in
                 just two weeks. Ideal for teams ready to see measurable results
                 fast.
+              </p>
+              <p className="cs-pricing__desc">
+                Includes 30 days of post-implementation support for bug fixes
+                and configuration adjustments related to the delivered workflow.
+                Continued optimization available through our Managed Integration
+                Support plan.
               </p>
               <ul className="cs-pricing__list">
                 <li>Discovery & system mapping</li>
@@ -96,6 +108,11 @@ export default function PricingCarousel() {
               <p className="cs-pricing__desc">
                 Ongoing management, monitoring, and updates to keep your
                 integrations secure and efficient.
+              </p>
+              <p className="cs-pricing__desc">
+                Continuous integration management, monitoring, and optimization.
+                Covers system updates, API changes, and proactive improvements
+                to keep your automations secure and reliable.
               </p>
               <ul className="cs-pricing__list">
                 <li>Continuous monitoring & support</li>

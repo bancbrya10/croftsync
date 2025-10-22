@@ -510,16 +510,6 @@ img,
   margin-top: 2rem;
 }
 
-.cs-pricing-card {
-  background: var(--cs-card);
-  border: 1px solid var(--cs-border);
-  border-radius: 16px;
-  padding: 2.5rem 2rem;
-  text-align: left;
-  box-shadow: 0 6px 20px -8px rgba(0, 0, 0, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
 .cs-pricing__title {
   font-size: 1.25rem;
   font-weight: 700;
@@ -575,18 +565,24 @@ img,
   height: 100%;
   min-height: 560px; /* adjust as needed for content */
   box-sizing: border-box;
+
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .cs-pricing-grid {
-    gap: 1.5rem;
-  }
+/* Tablets (≥ 640px) */
+@media (min-width: 640px) {
   .cs-pricing-card {
-    padding: 1.75rem 1.25rem;
-    text-align: center;
+    max-width: 420px;
   }
-  .cs-pricing__title {
-    font-size: 1.1rem;
+}
+
+/* Small laptops (≥ 768px) */
+@media (min-width: 768px) {
+  .cs-pricing-card {
+    max-width: 460px;
   }
 }
 
@@ -610,16 +606,17 @@ img,
    Larger Card Width Tweaks
    =============================== */
 
+/* Laptops / desktops (≥ 1024px) */
 @media (min-width: 1024px) {
   .cs-pricing-card {
-    max-width: 500px; /* wider cards */
-    margin: 0 auto; /* keep centered */
+    max-width: 520px;
   }
 }
 
-@media (min-width: 1440px) {
+/* Large desktops (≥ 1280px) */
+@media (min-width: 1280px) {
   .cs-pricing-card {
-    max-width: 600px; /* even wider on ultrawide screens */
+    max-width: 560px;
   }
 }
 
@@ -709,4 +706,10 @@ img,
 .cs-legal a {
   color: #38bdf8;
   text-decoration: underline;
+}
+
+.cs-pricing-swiper-wrapper {
+  max-width: 5000px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
