@@ -114,49 +114,65 @@ export default function CroftSyncConsulting() {
         </section>
 
         {/* WHY CROFTSYNC */}
-        <section className="cs-section">
-          <h2 className="cs-h2">Why CroftSync</h2>
+        <section class="cs-section">
+          <h2 class="cs-h2">Why CroftSync</h2>
 
-          <p className="cs-p">
-            CroftSync was founded to bridge the gap between HR, IT, and
-            Operations teams. Most organizations rely on dozens of disconnected
-            systems — from HR platforms to identity providers and business
-            applications — that don’t talk to each other. We make them work
-            together.
+          <p class="cs-p">
+            Most HR, IT, and business platforms already come with “native”
+            integrations — but those built-in connectors only go so far. They
+            can sync basic data between systems, yet every organization’s
+            reality is more complex: unique workflows, conditional access rules,
+            and tools that don’t talk to each other out of the box.
           </p>
+          <br/>
 
-          <p className="cs-p">
-            Unlike large consultancies that deliver reports and roadmaps, we
-            focus on fast, functional outcomes. Our two-week automation pilots
-            turn ideas into live integrations, helping you eliminate manual
-            onboarding, strengthen compliance, and keep every system in sync.
+          <p class="cs-p">
+            That’s where CroftSync comes in. We design secure, custom
+            integration logic that extends beyond what default HRIS or identity
+            provider connections can handle. From onboarding workflows and
+            conditional provisioning to automating approvals and multi-system
+            orchestration, CroftSync connects your technology to the way your
+            business actually operates.
           </p>
+          <br/>
 
-          <p className="cs-p">
-            Every engagement is built around three principles:
+          <p class="cs-p">
+            <strong>
+              Native integrations move data — CroftSync moves processes.
+            </strong>
+            <br/>
+            <br/>
+            Our consulting and automation services close the gap between HR, IT,
+            and operations, delivering solutions that reduce manual effort,
+            improve compliance, and scale with your organization’s growth.
           </p>
+          <br/>
 
-          <ul className="cs-list">
+          <ul class="cs-list">
             <li>
-              <strong>Deep Integration Expertise —</strong> We specialize in
-              HRIS and identity integrations — including BambooHR, Workday, and
-              Okta through secure, scalable automation.
+              <strong>Custom Integration Logic —</strong> Implement rules,
+              filters, and sequencing that pre-built connectors can’t support.
             </li>
             <li>
-              <strong>Fast, Fixed-Scope Delivery —</strong> Two-week pilots that
-              move from discovery to deployment without open-ended timelines or
-              surprise costs.
+              <strong>Cross-System Automation —</strong> Extend provisioning
+              events to CRMs, project tools, communication platforms, and more.
             </li>
             <li>
-              <strong>Security-First by Design —</strong> Every integration
-              follows best practices for SSO, SCIM, and least-privilege access
-              to keep your data protected.
+              <strong>Scalable Architecture —</strong> Build workflows that
+              evolve with your systems, not around their limitations.
+            </li>
+            <li>
+              <strong>Security & Compliance —</strong> Maintain least-privilege
+              access, auditability, and seamless deactivation across every
+              system.
             </li>
           </ul>
+          <br/>
 
-          <p className="cs-p">
-            CroftSync exists to make your data flow the way your organization
-            does — smoothly, securely, and automatically.
+          <p class="cs-p">
+            CroftSync turns disconnected tools into an integrated ecosystem —
+            one where new hires are productive on day one, departures are
+            handled securely, and every system stays in sync automatically.
           </p>
         </section>
 
